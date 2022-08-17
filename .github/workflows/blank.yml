@@ -22,11 +22,13 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-
+      - run: |
+          cd ~/
+          ls -R
       - name: Azure DevOps Commit Validator and Pull Request Linker
-        uses: joshjohanning/azdo_commit_message_validator@v1
+        uses: joshjohanning/azdo_commit_message_validator@test
         with:
           azure-devops-organization: jjohanning0798 # The name of the Azure DevOps organization
           azure-devops-token: ${{ secrets.AZURE_DEVOPS_PAT }} # "Azure DevOps Personal Access Token (needs to be a full PAT)
-          fail-if-missing-workitem-commit-link: true # Fail the action if a commit in the pull request is missing AB# in the commit message
+          fail-if-missing-workitem-commit-link: false # Fail the action if a commit in the pull request is missing AB# in the commit message
   
