@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Azure DevOps Commit Validator and Pull Request Linker
-        uses: joshjohanning/azdo_commit_message_validator@v1
+        uses: joshjohanning/azdo_commit_message_validator@fix-path
         with:
           azure-devops-organization: jjohanning0798 # The name of the Azure DevOps organization
           azure-devops-token: ${{ secrets.AZURE_DEVOPS_PAT }} # "Azure DevOps Personal Access Token (needs to be a full PAT)
