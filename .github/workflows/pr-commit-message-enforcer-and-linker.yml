@@ -6,9 +6,7 @@ on:
 
 jobs:
   pr-commit-message-enforcer-and-linker:
-    runs-on: ubuntu-latest
-    container: 
-      image: ubuntu:latest
+    runs-on: windows-latest
       
     steps:
       - uses: actions/checkout@v3
