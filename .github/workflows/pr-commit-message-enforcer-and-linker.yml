@@ -15,8 +15,8 @@ jobs:
         with:
           azure-devops-organization: jjohanning0798 # The name of the Azure DevOps organization
           azure-devops-token: ${{ secrets.AZURE_DEVOPS_PAT }} # "Azure DevOps Personal Access Token (needs to be a full PAT)
+          check-commits: true
           fail-if-missing-workitem-commit-link: true # Fail the action if a commit in the pull request is missing AB# in the commit message
           link-commits-to-pull-request: true # Link the work items found in commits to the pull request
-          check-commits: false
-          check-pull-request: true
+          check-pull-request: false
   
