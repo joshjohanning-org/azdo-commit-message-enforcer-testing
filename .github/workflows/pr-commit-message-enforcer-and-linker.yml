@@ -3,6 +3,8 @@ name: pr-commit-message-enforcer-and-linker
 on:
   pull_request:
     branches: [ "main" ]
+    types:
+      - edited
 
 jobs:
   pr-commit-message-enforcer-and-linker:
