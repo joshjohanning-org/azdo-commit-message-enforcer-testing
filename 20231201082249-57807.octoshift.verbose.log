@@ -1,0 +1,6 @@
+[2023-12-01 08:22:50] [DEBUG] HTTP GET: https://www.githubstatus.com/api/v2/incidents/unresolved.json
+[2023-12-01 08:22:52] [DEBUG] RESPONSE (OK): {"page":{"id":"kctbh9vrtdwd","name":"GitHub","url":"https://www.githubstatus.com","time_zone":"Etc/UTC","updated_at":"2023-12-01T08:54:06.158Z"},"incidents":[]}
+[2023-12-01 08:22:52] [DEBUG] HTTP GET: https://raw.githubusercontent.com/github/gh-gei/main/LATEST-VERSION.txt
+[2023-12-01 08:22:53] [DEBUG] RESPONSE (OK): v1.5.0
+
+[2023-12-01 08:22:53] [INFO] You are running an up-to-date version of the ado2gh CLI [v1.5.0]
