@@ -11,6 +11,8 @@ on:
 
 jobs:
   pr-commit-message-enforcer-and-linker:
+    # Skip runs triggered by azure-boards bot editing the PR body to avoid duplicate workflow runs
+    if: github.actor != 'azure-boards[bot]'
     runs-on: ubuntu-latest
     permissions:
       contents: read
