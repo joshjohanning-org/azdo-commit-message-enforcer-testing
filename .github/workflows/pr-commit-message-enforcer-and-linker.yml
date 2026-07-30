@@ -27,3 +27,4 @@ jobs:
           link-commits-to-pull-request: true # Link the work items found in commits to the pull request
           check-commits: true
           check-pull-request: true
+          add-work-item-table: true
